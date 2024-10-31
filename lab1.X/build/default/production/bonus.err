@@ -1,0 +1,5 @@
+Warning[205] C:\USERS\USER\MPLABXPROJECTS\LAB1.X\BONUS.ASM 1 : Found directive in column 1. (List)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB1.X\BONUS.ASM 15 : Found label after column 1. (run)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB1.X\BONUS.ASM 22 : Found label after column 1. (decrease)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB1.X\BONUS.ASM 25 : Found label after column 1. (fin)
+Warning[205] C:\USERS\USER\MPLABXPROJECTS\LAB1.X\BONUS.ASM 30 : Found directive in column 1. (end)

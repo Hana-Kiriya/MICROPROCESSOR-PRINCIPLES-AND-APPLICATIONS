@@ -1,0 +1,4 @@
+Warning[205] C:\USERS\USER\MPLABXPROJECTS\LAB4.X\BASIC.ASM 1 : Found directive in column 1. (List)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB4.X\BASIC.ASM 8 : Found label after column 1. (Sub_Mul)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB4.X\BASIC.ASM 37 : Found label after column 1. (start)
+Warning[205] C:\USERS\USER\MPLABXPROJECTS\LAB4.X\BASIC.ASM 40 : Found directive in column 1. (end)

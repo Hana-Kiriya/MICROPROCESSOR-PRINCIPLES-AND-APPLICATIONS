@@ -1,0 +1,6 @@
+Warning[205] C:\USERS\USER\MPLABXPROJECTS\LAB4.X\BONUS.ASM 1 : Found directive in column 1. (List)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB4.X\BONUS.ASM 22 : Found label after column 1. (mov)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB4.X\BONUS.ASM 30 : Found label after column 1. (dec)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB4.X\BONUS.ASM 34 : Found label after column 1. (fib)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB4.X\BONUS.ASM 44 : Found label after column 1. (finish)
+Warning[205] C:\USERS\USER\MPLABXPROJECTS\LAB4.X\BONUS.ASM 46 : Found directive in column 1. (end)

@@ -1,0 +1,7 @@
+Warning[205] C:\USERS\USER\MPLABXPROJECTS\LAB2.X\ADVANCED.ASM 1 : Found directive in column 1. (List)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB2.X\ADVANCED.ASM 8 : Found label after column 1. (setup)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB2.X\ADVANCED.ASM 29 : Found label after column 1. (runx)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB2.X\ADVANCED.ASM 33 : Found label after column 1. (runy)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB2.X\ADVANCED.ASM 45 : Found label after column 1. (change)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB2.X\ADVANCED.ASM 55 : Found label after column 1. (fin)
+Warning[205] C:\USERS\USER\MPLABXPROJECTS\LAB2.X\ADVANCED.ASM 57 : Found directive in column 1. (end)
