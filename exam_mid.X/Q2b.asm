@@ -1,0 +1,86 @@
+List p=18f4520 ;???PIC18F4520
+    ;???PIC18F
+    #include<p18f4520.inc>
+        CONFIG OSC = INTIO67
+        CONFIG WDT = OFF
+        org 0x00 ; ???0x00???????
+	
+    store macro x0, x1,x2,x3, x4, x5
+	MOVLW x0
+	MOVWF 0x000
+	MOVLW x1
+	MOVWF 0x001
+	MOVLW x2
+	MOVWF 0x002
+	MOVLW x3
+	MOVWF 0x003
+	MOVLW x4
+	MOVWF 0x004
+	MOVLW x5
+	MOVWF 0x005
+    endm
+    initial:
+	store 0x02, 0x03, 0x04, 0x03, 0x04, 0x05
+	LFSR 0, 0x000 ; FSR0 point to 0x300
+	LFSR 1, 0x003 ; FSR1 point to 0x316
+	LFSR 2, 0x020 ; FSR1 point to 0x316
+	MOVLW 0x003
+	MOVWF 0x010
+	MOVWF 0x011
+    check0:
+	MOVLW 0x006
+	CPFSLT 0x011
+	    GOTO add
+	INCF 0x011
+	MOVF POSTINC1, w
+	CPFSEQ INDF0
+	    GOTO check0
+	MOVLW 0x000
+	ADDWF POSTINC0
+	DECFSZ 0x010
+	    GOTO check0
+	GOTO check1
+    add:
+        MOVFF POSTINC0, POSTINC2 
+	MOVLW 0x003
+	MOVWF 0x011
+	LFSR 1, 0x003
+	DECFSZ 0x010
+	    GOTO check0
+	    
+	LFSR 0, 0x000 ; FSR0 point to 0x300
+	LFSR 1, 0x003 ; FSR1 point to 0x316
+	MOVLW 0x003
+	MOVWF 0x010
+	MOVWF 0x011
+    check1:
+	MOVLW 0x003
+	CPFSLT 0x010
+	    GOTO add1
+	MOVF POSTINC0, w
+	DECF 0x010
+	CPFSEQ INDF1
+	    GOTO check1
+	MOVLW 0x000
+	MOVWF POSTINC1
+	MOVLW 0x005
+	CPFSGT 0x011
+	    GOTO check1
+	GOTO finish
+    add1:
+        MOVFF POSTINC1, POSTINC2 
+	INCF 0x011
+	MOVLW 0x003
+	MOVWF 0x010
+	MOVLW 0x005
+	LFSR 0, 0x000
+	CPFSGT 0x011
+	    GOTO check1
+    finish:
+	NOP
+end
+
+
+
+
+

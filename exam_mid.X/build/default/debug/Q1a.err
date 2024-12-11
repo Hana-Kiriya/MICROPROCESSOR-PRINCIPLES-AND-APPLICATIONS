@@ -1,0 +1,7 @@
+Warning[205] C:\USERS\USER\MPLABXPROJECTS\EXAM_MID.X\Q1A.ASM 1 : Found directive in column 1. (List)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\EXAM_MID.X\Q1A.ASM 8 : Found label after column 1. (devide)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\EXAM_MID.X\Q1A.ASM 57 : Found label after column 1. (initial)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\EXAM_MID.X\Q1A.ASM 15 : Found label after column 1. (run)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\EXAM_MID.X\Q1A.ASM 38 : Found label after column 1. (sub_l)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\EXAM_MID.X\Q1A.ASM 53 : Found label after column 1. (finish)
+Warning[205] C:\USERS\USER\MPLABXPROJECTS\EXAM_MID.X\Q1A.ASM 67 : Found directive in column 1. (end)

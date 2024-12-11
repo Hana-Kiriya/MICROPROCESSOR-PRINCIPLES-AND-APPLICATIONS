@@ -1,0 +1,24 @@
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 58 : Found label after column 1. (L1)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 59 : Found label after column 1. (L2)
+Warning[205] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 81 : Found directive in column 1. (endm)
+Warning[203] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 83 : Found opcode in column 1. (goto)
+Warning[202] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 128 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 67 : Found label after column 1. (LOOP2)
+Warning[202] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 68 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 70 : Found label after column 1. (LOOP1)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 67 : Found label after column 1. (LOOP2)
+Warning[202] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 68 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 70 : Found label after column 1. (LOOP1)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 67 : Found label after column 1. (LOOP2)
+Warning[202] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 68 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 70 : Found label after column 1. (LOOP1)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 67 : Found label after column 1. (LOOP2)
+Warning[202] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 68 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 70 : Found label after column 1. (LOOP1)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 67 : Found label after column 1. (LOOP2)
+Warning[202] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 68 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 70 : Found label after column 1. (LOOP1)
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 67 : Found label after column 1. (LOOP2)
+Warning[202] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 68 : Argument out of range.  Least significant bits used.
+Warning[207] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 70 : Found label after column 1. (LOOP1)
+Warning[205] C:\USERS\USER\MPLABXPROJECTS\LAB7.X\BONUS.ASM 320 : Found directive in column 1. (end)
