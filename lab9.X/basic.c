@@ -1,4 +1,4 @@
-//??????
+///右旋到底開始
 #include <xc.h>
 #include <pic18f4520.h>
 #include <stdio.h>
