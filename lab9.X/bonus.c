@@ -1,4 +1,3 @@
-//??????
 #include <xc.h>
 #include <pic18f4520.h>
 #include <stdio.h>
@@ -13,7 +12,7 @@
 
 unsigned int duty_cycle = 0;
 
-#define _XTAL_FREQ 1000000   // 1 MHz => 1 �s
+#define _XTAL_FREQ 1000000   // 1 MHz => 1 µs
 
 void __interrupt(high_priority)H_ISR(){
     
@@ -50,33 +49,32 @@ void main(void)
     LATC = 0;
     
     //step1
-    ADCON1bits.VCFG0 = 0;       //?????????
+    ADCON1bits.VCFG0 = 0;       //參考電壓為內部電源
     ADCON1bits.VCFG1 = 0;
-    ADCON1bits.PCFG = 0b1110; //AN0 ?analog input,???? digital
-    ADCON0bits.CHS = 0b0000;  //AN0 ?? analog input
-    ADCON2bits.ADCS = 0b000;  //????000(1Mhz < 2.86Mhz)
-    ADCON2bits.ACQT = 0b001;  //Tad = 2 us acquisition time?2Tad = 4 > 2.4
+    ADCON1bits.PCFG = 0b1110; //AN0 為analog input,其他則是 digital
+    ADCON0bits.CHS = 0b0000;  //AN0 當作 analog input
+    ADCON2bits.ADCS = 0b000;  //查表後設000(1Mhz < 2.86Mhz)
+    ADCON2bits.ACQT = 0b001;  //Tad = 2 us acquisition time設2Tad = 4 > 2.4
     ADCON0bits.ADON = 1;
     ADCON2bits.ADFM = 0;    //left justified 
     
-    
     //step2
-    PIE1bits.ADIE = 1; //??ADC??
-    PIR1bits.ADIF = 0; //???????
-    INTCONbits.PEIE = 1; //??????
-    INTCONbits.GIE = 1; //??????
+    PIE1bits.ADIE = 1; //啟用ADC中斷
+    PIR1bits.ADIF = 0; //清除中斷標誌位
+    INTCONbits.PEIE = 1; //啟用周邊中斷
+    INTCONbits.GIE = 1; //啟用全域中斷
 
     T2CONbits.TMR2ON = 0b1; //0b1 -> on, 0b0 -> off
     T2CONbits.T2CKPS = 0b01; //0b00 -> prescaler = 1, 0b01 -> prescaler = 4, 0b10 -> prescaler = 16
     
     //PWM set
-    PR2 = 0xFF; //PWM ?? => T = (255 + 1) * 4 * 1(�s) * 4(???)
+    PR2 = 0xFF; //PWM ?? => T = (255 + 1) * 4 * 1(µs) * 4(???)
     CCPR1L = 0x00; //??????
     CCP1CONbits.CCP1M = 0b1100; //?? PWM ??
     
 
     //step3
-    ADCON0bits.GO = 1; //??ADC?????????0
+    ADCON0bits.GO = 1; //啟用ADC，當轉換完成會變成 0
     
     //?PWM ??????????LED???????????????(> 100 Hz)??LED?????
     //????(Duty cycle)???? PWM ????active-high?????active-high????????????????LED?????
